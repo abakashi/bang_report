@@ -16,7 +16,7 @@ class Postagem {
     function __construct ($autor, $content){
         this->autor = $autor;
         this->content = $content;
-        this->data = date("d/m/Y - H:i:s");
+        this->data = ; //TODO
     }
 
 }
