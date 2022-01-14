@@ -24,7 +24,7 @@ class Pessoa {
 		this->nome = $nome;
 		this->nasc = $nasc;
 		this->email = $email;
-		this->pwd = $pwd;
+		// TODO - Pesquisar HASH da senha. this->pwd = $pwd;
 	}
 
 	/**
@@ -54,6 +54,28 @@ class Pessoa {
 	function getPwd(){//Senha
 		return this->pwd;
 	}
+
+
+	/**	
+	* SETTERS DA CLASSE
+	* Levando em conta que ninguém troca de nome
+	* ou de data de nascimento, estão declarados os 
+	* setters dos dados que poderão ser alterados 
+	* ao longo da atividade do usuário.
+	*/
+	
+	function setEmail($email){//Endereço de e-mail
+		this->email = $email;
+	}
+	
+	function setQuote($quote){//Frase de efeito
+		this->quote =  $quote;
+	}
+
+	function setPwd($pwd){//Senha
+		//TODO - Ainda a decidir como será a senha
+	}
+
 
 }
 
