@@ -20,7 +20,7 @@ function autoInclude($nomeClasse){ //Função para incluir classes dinamicamente
     if(file_exists("class". DIRECTORY_SEPARATOR . $nomeClasse . ".php") === true){
         require_once("class". DIRECTORY_SEPARATOR . $nomeClasse . ".php");
     } else {
-        echo "Classe não encontrada.";
+        echo "Classe $nomeClasse não encontrada.";
     }
 
 }

@@ -20,7 +20,7 @@ class Pessoa {
      * 		senha (ainda será encriptada em algum momento antes
      * 		de seguir para o banco de dados).
      */
-	function __construct($nome, $nasc, $email, $pwd) {
+	public function __construct($nome, $nasc, $email, $pwd) {
 		this->nome = $nome;
 		this->nasc = $nasc;
 		this->email = $email;
@@ -31,27 +31,27 @@ class Pessoa {
 	 * GETTERS DA CLASSE
 	 */
 
-	function getId(){ //ID da pessoa
+	public function getId(){ //ID da pessoa
 		return this->pid;
 	}
 
-	function getNome(){ //Nome da Pessoa
+	public function getNome(){ //Nome da Pessoa
 		return this->nome;
 	}
 
-	function getNasc(){//Data de nascimento
+	public function getNasc(){//Data de nascimento
 		return this->nasc;
 	}
 
-	function getEmail(){//Endereço de e-mail
+	public function getEmail(){//Endereço de e-mail
 		return this->email;
 	}
 	
-	function getQuote(){//Frase de efeito
+	public function getQuote(){//Frase de efeito
 		return this->quote;
 	}
 
-	function getPwd(){//Senha
+	public function getPwd(){//Senha
 		return this->pwd;
 	}
 
@@ -64,15 +64,15 @@ class Pessoa {
 	* ao longo da atividade do usuário.
 	*/
 	
-	function setEmail($email){//Endereço de e-mail
+	public function setEmail($email){//Endereço de e-mail
 		this->email = $email;
 	}
 	
-	function setQuote($quote){//Frase de efeito
+	public function setQuote($quote){//Frase de efeito
 		this->quote =  $quote;
 	}
 
-	function setPwd($pwd){//Senha
+	public function setPwd($pwd){//Senha
 		//TODO - Ainda a decidir como será a senha
 	}
 

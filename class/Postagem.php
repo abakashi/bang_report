@@ -13,7 +13,7 @@ class Postagem {
     private $content;
     private $comment = array();
 
-    function __construct ($autor, $content){
+    public function __construct ($autor, $content){
         this->autor = $autor;
         this->content = $content;
         this->data = ; //TODO
